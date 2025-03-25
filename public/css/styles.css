@@ -1,0 +1,143 @@
+@import "./bootstraped-css/button.css";
+@import "./bootstraped-css/header.css";
+@import "./bootstraped-css/footer.css";
+@import "./bootstraped-css/nav.css";
+@import "./bootstraped-css/table.css";
+@import "./bootstraped-css/form.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+:root {
+  --primary: #093a3e;
+  --light: #3aafb9;
+  --dark: #001011;
+  --secondary: #cc2936;
+  --ascent: #ebbab9;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 40px;
+}
+
+main {
+  height: 100vh;
+}
+.text-center{
+  text-align: center  ;
+}
+
+
+
+
+
+.contact-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.contact-info div {
+  text-align: center;
+  width: 30%;
+}
+
+.contact-info h2 {
+  color: #4CAF50;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Form Styles */
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contact-form button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.contact-form .error {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .contact-info {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-info div {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+}

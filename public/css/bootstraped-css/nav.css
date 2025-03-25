@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  flex-grow: 2;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 20%;
+}
+nav > a {
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+nav > a:hover {
+  color: white;
+  transition: 0.4s;
+}

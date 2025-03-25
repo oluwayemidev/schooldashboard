@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /schooldashboard/
+    
+    # Redirect admin panel
+    RewriteRule ^admin/school$ routes/admin.php?route=school [L,QSA]
+    RewriteRule ^admin/school/(.*)$ routes/admin.php?route=school&action=$1 [L,QSA]
+    
+    # Redirect other admin actions
+    RewriteRule ^admin/(.*)$ routes/admin.php?action=$1 [L,QSA]
+    
+    # Remove file extensions (optional)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)$ $1.php [L,QSA]
+</IfModule>
